@@ -22,7 +22,7 @@ $check=new Backend_handler();
 </style>
 <body>
     <div class="container">
-        <div class="login col-lg-4 bg-primary p-4">
+        <div class="login col-lg-4 bg-secondary p-4">
 
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <h2 class="text-white">LOGIN FORM to SMS</h2>

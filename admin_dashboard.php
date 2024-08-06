@@ -67,22 +67,22 @@ $check=new Backend_handler();
 
 </style>
 <body>
-    <div class="header p-3 bg-primary m-1">
-    <h2 class="text-white text-center"><u>Student Information</u></h2>
+    <div class="header p-3 bg-secondary m-1">
+    <h2 class="text-white text-center"><u>Student Management System</u></h2>
     </div>
     <div class="container">
 
         <div class="user_info m-2">
            
             <span class="add">
-                <button class="btn btn-info" data-toggle="collapse" id="add_student" data-target="#">Add student</button>
+                <button class="btn btn-success" data-toggle="collapse" id="add_student" data-target="#">Add student</button>
                 <a href="logout.php" class="btn btn-secondary">Logout</a>
                 
                 <div class="add_student" id="add_student_form">
                     <div class="col-lg-12">
                 <form action=""method="POST">
                     
-        <h2 class="text-primary m-2">Register student</h2>
+        <h2 class="text-primary m-2">Add student</h2>
         <div class="row">
          <div class="col-lg-3">
            <label for="">Names:</label>
@@ -164,7 +164,7 @@ if(isset($_POST['register'])){
                     $info = $check->studentToUpdateInfo($student_id);
                     ?>
                     
-        <h2 class="text-primary m-2">update student</h2>
+        <h2 class="text-primary m-2">update student's information</h2>
         <div class="row">
          <div class="col-lg-3">
            <label for="">Names:</label>
@@ -235,7 +235,7 @@ if(isset($_POST['update'])){
                 </div>                
 
             </span>
-            <table class="table table-stripped">
+            <table class="table table-hover">
        <thead>
             <th>Names</th>
             <th>Email</th>
@@ -255,8 +255,8 @@ if(isset($_POST['update'])){
             </table>
         </div>
     </div>
-    <div class="footer p-4 bg-primary">
-        Designed by <a  class="text-center text-white " href="https://www.linkedin.com/in/hozana-dusabimana-3896aa2b8/">DUSABIMANA Hozana</a>
+    <div class="footer p-4 bg-secondary">
+        Designed by <a  class="text-center text-white " href=""> Manzi Bahizi Bertin</a>
     </div>
     <script src="script.js"></script>
     
